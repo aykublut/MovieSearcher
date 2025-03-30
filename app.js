@@ -17,7 +17,7 @@ searchIcon.addEventListener("click", exe)
 
 function exe() {
     const movieName = movieTitleInput.value.trim();
-    fetch(`http://www.omdbapi.com/?t=${movieName}&apikey=be73355b&`)
+    fetch(`https://www.omdbapi.com/?t=${movieName}&apikey=be73355b&`)
         .then((res) => res.json())
         .then((data) => {
             console.log(data);
